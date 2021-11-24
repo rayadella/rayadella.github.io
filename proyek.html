@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>Procedure text</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<body>
+
+<!-- Links (sit on top) -->
+
+
+<!-- Header with image -->
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">How To Make Cireng</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Ingredients</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Instructions</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Tapioca starch</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Green Onion Chopped</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Water</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Salt</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Oil</h5>
+      <p class="w3-text-grey"></p><br>
+      
+      <h5>Garlic</h5>
+      <p class="w3-text-grey"></p><br>
+      
+      <h5>Chicken Seasoning</h5>
+      <p class="w3-text-grey"></p><br>
+      
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>First</h5>
+      <p class="w3-text-grey">Grind garlic, salt and chicken seasoning until smooth and evenly mix.</p><br>
+    
+      <h5>Second</h5>
+      <p class="w3-text-grey">Mix well garlic paste into water then add about 4 tbsp tapioca starch</p><br>
+    
+      <h5>Third</h5>
+      <p class="w3-text-grey">Turn on the stove over medium heat then stir it until thickened.</p><br>
+    
+      <h5>Fourth</h5>
+      <p class="w3-text-grey">Add green onion and stir until well blended.</p><br>
+    
+      <h5>Fifth</h5>
+      <p class="w3-text-grey">Put the thickening seasoning into the remaining tapioca starch on the large bowl then mix, leave a little tapioca starch so when you forming it won’t stick.</p>
+      
+      <h5>Sixth</h5>
+      <p class="w3-text-grey">Make cireng/fried tapioca flour in a round shape about 18-20 pieces.</p>
+      
+      <h5>Seventh</h5>
+      <p class="w3-text-grey">In a pan fry, heat the cooking oil over medium heat.</p>
+      
+      <h5>Eighth</h5>
+      <p class="w3-text-grey">Fry cireng until nice and golden.</p>
+      
+      <h5>Ninth</h5>
+      <p class="w3-text-grey">After cireng is cooked, rest it on a cooling rack to remove excess oil.</p>
+
+      <h5>Tenth</h5>
+      <p class="w3-text-grey">And cireng ready to servee!!</p>
+
+    </div>  
+    
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
